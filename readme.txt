@@ -10,7 +10,3 @@ Alors non c'est pas du gros code faut pas déconner, j'ai utilisé beaucoup de l
 DONC, pour utiliser ce piti programme, assurez vous d'avoir installé AirMore sur votre téléphone et installez la librarie pyairmore sur votre ordinateur (sinon ça marche pô)
 
 Maintenant que tout est installé, bah roulez jeunnesse !!! Il ne vous reste plus qu'à lancer l'exécutable et suivre le programme !
-
-!!! CE PROGRAMME EST SOUS LICENSE ET IL EST INTERDIT DE LE RECOPIER A DES FINS COMMERCIALES !!!
-
-Le créateur (moi, donc Kite-Kate) veut que ce programme reste GRATUIT et LIBRE, donc le premier connard qui le vend aura un procés au cul ^^
