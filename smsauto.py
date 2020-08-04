@@ -79,7 +79,7 @@ if session.is_server_running:
 				v = messagebox.askquestion(title="Confimer le message", message=f"Voulez-vous vraiment envoyer ce message à {len(phone_numbers)} numéros de téléphone? \n\n{mess}")
 				if v == "yes":
 					valid = 1
-		bar = IncrementalBar("Analyse du fichier Excel en cours...", max=len(phone_numbers))
+		bar = IncrementalBar("Envoi des SMS en cours...", max=len(phone_numbers))
 		for num in phone_numbers:
 			try:
 				service.send_message(num, mess)
