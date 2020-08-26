@@ -80,7 +80,11 @@ if session.is_server_running:
 				if v == "yes":
 					valid = 1
 		bar = IncrementalBar("Envoi des SMS en cours...", max=len(phone_numbers))
+		row = 0
 		for num in phone_numbers:
+			if row == 10:
+				print("Pause des envois afin de ne pas bloquer la ligne")
+				time.sleep(20)
 			try:
 				service.send_message(num, mess)
 			except MessageRequestGSMError:
@@ -88,7 +92,8 @@ if session.is_server_running:
 			else:
 				print(f"Message envoyé à {num}")
 			bar.next()
-			bar.finish()
+			row = row + 1
+		bar.finish()
 		messagebox.showwarning(title="Fin", message="Tout les messages ont été envoyés")
 	else:
 		print("\nLa connexion n'a pas été autorisée merci de réessayer")
